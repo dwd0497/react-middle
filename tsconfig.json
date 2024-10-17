@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     "noImplicitAny": true,
     "target": "es5",
     "module": "ESNext",
