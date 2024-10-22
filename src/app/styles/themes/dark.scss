@@ -1,6 +1,9 @@
 .app.dark {
   --bg-color: blue;
+  --bg-color-inverted: lightgray;
 
   --primary-color: green;
   --secondary-color: red;
+  --primary-color-inverted: blue;
+  --secondary-color-inverted: lightslategray;
 }

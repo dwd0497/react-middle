@@ -1,7 +1,11 @@
 @import 'normalize';
 @import 'variables/global';
-@import 'themes/normal';
+@import 'themes/light';
 @import 'themes/dark';
+
+* {
+  box-sizing: border-box;
+}
 
 .app {
   font: var(--font-m);
