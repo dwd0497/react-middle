@@ -7,7 +7,7 @@
 PRODUCTION зависимости - npm i react@17.0.2
 devDependencies - npm i -D @types/react@17.0.39,
 
-npm install react-router-dom@5.3.3 @types/react-router-dom@5.3.3 --save-dev
+npm install file-loader@6.2.0 --save-dev
 
 "devDependencies": {
     "@babel/core": "^7.17.5",
