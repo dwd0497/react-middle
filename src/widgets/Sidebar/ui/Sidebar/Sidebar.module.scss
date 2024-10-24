@@ -1,0 +1,14 @@
+.Sidebar {
+  width: 300px;
+  background: var(--bg-color-inverted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  transition: width 0.2s;
+}
+
+.collapsed {
+  width: 80px;
+}
