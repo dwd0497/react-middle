@@ -15,9 +15,14 @@ export const buildPlugins = (options: BuildOptions): webpack.WebpackPluginInstan
         chunkFilename: 'css/[name].[contenthash:8].css'
     })
 
+    const definePlugin = new webpack.DefinePlugin({
+        __IS_DEV__: JSON.stringify(options.isDev),
+    });
+
     return [
         htmlWebpackPlugin,
         progressPlugin,
-        miniCssExtractPlugin
+        miniCssExtractPlugin,
+        definePlugin
     ]
 }

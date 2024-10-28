@@ -12,3 +12,9 @@
 .collapsed {
   width: 80px;
 }
+
+.switchers {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
