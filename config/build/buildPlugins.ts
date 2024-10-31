@@ -19,10 +19,13 @@ export const buildPlugins = (options: BuildOptions): webpack.WebpackPluginInstan
         __IS_DEV__: JSON.stringify(options.isDev),
     });
 
+    const hotModuleReplacementPlugin = new webpack.HotModuleReplacementPlugin()
+
     return [
         htmlWebpackPlugin,
         progressPlugin,
         miniCssExtractPlugin,
-        definePlugin
+        definePlugin,
+        hotModuleReplacementPlugin
     ]
 }
