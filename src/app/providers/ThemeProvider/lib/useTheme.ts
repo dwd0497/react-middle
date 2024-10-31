@@ -1,5 +1,5 @@
-import {LS_THEME_KEY, Theme, ThemeContext} from "./ThemeContext";
-import {useContext} from "react";
+import { useContext } from 'react';
+import { LS_THEME_KEY, Theme, ThemeContext } from './ThemeContext';
 
 interface IUseTheme {
     theme: Theme;
@@ -7,13 +7,13 @@ interface IUseTheme {
 }
 
 export function useTheme(): IUseTheme {
-    const {theme, setTheme} = useContext(ThemeContext);
+    const { theme, setTheme } = useContext(ThemeContext);
 
     const toggleTheme = () => {
-        const newTheme = theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT
+        const newTheme = theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT;
         setTheme(newTheme);
         localStorage.setItem(LS_THEME_KEY, newTheme);
-    }
+    };
 
-    return {theme, toggleTheme};
+    return { theme, toggleTheme };
 }
