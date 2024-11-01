@@ -1,27 +1,25 @@
-@import 'normalize';
-@import 'variables/global';
-@import 'themes/light';
-@import 'themes/dark';
+@import "normalize";
+@import "variables/global";
+@import "themes/light";
+@import "themes/dark";
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .app {
-  font: var(--font-m);
-
-  background: var(--bg-color);
-  color: var(--primary-color);
-
-  min-height: 100vh;
+    font: var(--font-m);
+    background: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
 }
 
 .page-container {
-  display: flex;
-  height: calc(100vh - var(--navbar-height));
+    display: flex;
+    height: calc(100vh - var(--navbar-height));
 }
 
 .page-content {
-  flex-grow: 1;
-  padding: 20px;
+    flex-grow: 1;
+    padding: 20px;
 }
