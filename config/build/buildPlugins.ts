@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { BuildOptions } from './types/config';
 
 export const buildPlugins = (options: BuildOptions): webpack.WebpackPluginInstance[] => {
@@ -19,6 +20,8 @@ export const buildPlugins = (options: BuildOptions): webpack.WebpackPluginInstan
         __IS_DEV__: JSON.stringify(options.isDev),
     });
 
+    const bundleAnalyzerPlugin = new BundleAnalyzerPlugin({ openAnalyzer: false });
+
     const hotModuleReplacementPlugin = new webpack.HotModuleReplacementPlugin();
 
     return [
@@ -27,5 +30,6 @@ export const buildPlugins = (options: BuildOptions): webpack.WebpackPluginInstan
         miniCssExtractPlugin,
         definePlugin,
         hotModuleReplacementPlugin,
+        bundleAnalyzerPlugin,
     ];
 };
