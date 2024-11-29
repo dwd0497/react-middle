@@ -8,7 +8,7 @@ import { Suspense } from 'react';
 
 export const App = () => {
     const { theme } = useTheme();
-    throw new Error('123');
+
     return (
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback="">

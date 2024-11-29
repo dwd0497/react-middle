@@ -16,10 +16,10 @@
 
 .page-container {
     display: flex;
-    height: calc(100vh - var(--navbar-height));
 }
 
 .page-content {
     flex-grow: 1;
     padding: 20px;
+    height: calc(100vh - var(--navbar-height));
 }
