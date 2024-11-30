@@ -24,12 +24,21 @@ export const buildPlugins = (options: BuildOptions): webpack.WebpackPluginInstan
 
     const hotModuleReplacementPlugin = new webpack.HotModuleReplacementPlugin();
 
+    if (options.isDev) {
+        return [
+            htmlWebpackPlugin,
+            progressPlugin,
+            miniCssExtractPlugin,
+            definePlugin,
+            hotModuleReplacementPlugin,
+            bundleAnalyzerPlugin,
+        ];
+    }
+
     return [
         htmlWebpackPlugin,
         progressPlugin,
         miniCssExtractPlugin,
         definePlugin,
-        hotModuleReplacementPlugin,
-        bundleAnalyzerPlugin,
     ];
 };
