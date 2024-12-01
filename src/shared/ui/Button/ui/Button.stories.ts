@@ -37,3 +37,32 @@ export const Outlined: Story = {
         children: 'Button',
     },
 };
+
+export const Inverted: Story = {
+    args: {
+        theme: Theme.INVERTED,
+        children: 'Button',
+    },
+};
+
+export const SizeM: Story = {
+    args: {
+        theme: Theme.INVERTED,
+        children: 'Button',
+    },
+};
+
+export const SizeL: Story = {
+    args: {
+        theme: Theme.INVERTED,
+        children: 'Button',
+    },
+};
+
+export const Square: Story = {
+    args: {
+        theme: Theme.PRIMARY,
+        children: '?',
+        square: true,
+    },
+};

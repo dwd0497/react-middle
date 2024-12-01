@@ -7,16 +7,48 @@
     justify-content: space-between;
     padding: 20px;
     transition: width 0.2s;
+    position: relative;
 }
 
-.collapsed {
-    width: 80px;
+.toggle {
+    position: absolute;
+    right: -32px;
+    bottom: 26px;
 }
 
 .switchers {
-    margin-top: 20px;
+    margin-top: auto;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.collapsed {
+    width: 80px;
+
+    .items {
+        align-items: center;
+    }
+
+    .link {
+        height: 24px;
+
+        span {
+            display: none;
+        }
+    }
 }

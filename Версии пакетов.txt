@@ -4,6 +4,8 @@
 
 Зависимости станавливаем так
 
+chpt_5dda5023cdd11be
+
 PRODUCTION зависимости - npm i react@17.0.2
 devDependencies - npm i -D @types/react@17.0.39,
 
