@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 
-import { Button, Theme } from './Button';
+import { Button, ButtonTheme } from './Button';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -19,49 +19,49 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
     args: {
-        theme: Theme.PRIMARY,
+        theme: ButtonTheme.PRIMARY,
         children: 'Button',
     },
 };
 
 export const Clear: Story = {
     args: {
-        theme: Theme.CLEAR,
+        theme: ButtonTheme.CLEAR,
         children: 'Button',
     },
 };
 
 export const Outlined: Story = {
     args: {
-        theme: Theme.OUTLINED,
+        theme: ButtonTheme.OUTLINED,
         children: 'Button',
     },
 };
 
 export const Inverted: Story = {
     args: {
-        theme: Theme.INVERTED,
+        theme: ButtonTheme.INVERTED,
         children: 'Button',
     },
 };
 
 export const SizeM: Story = {
     args: {
-        theme: Theme.INVERTED,
+        theme: ButtonTheme.INVERTED,
         children: 'Button',
     },
 };
 
 export const SizeL: Story = {
     args: {
-        theme: Theme.INVERTED,
+        theme: ButtonTheme.INVERTED,
         children: 'Button',
     },
 };
 
 export const Square: Story = {
     args: {
-        theme: Theme.PRIMARY,
+        theme: ButtonTheme.PRIMARY,
         children: '?',
         square: true,
     },
